@@ -37,8 +37,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
 
-  --bg-auth-dark: url("/images/auth-dark.png");
   --bg-auth-light: url("/images/auth-light.png");
+  --bg-auth-dark: url("/images/auth-dark.png");
 
   --font-inter: "Inter", sans-serif;
   --font-space-grotesk: "Space Grotesk", sans-serif;
@@ -117,6 +117,14 @@
   :root {
     --radius: 0.5rem;
   }
+}
+
+@utility bg-auth-light {
+  @apply bg-[url("/images/auth-light.png")];
+}
+
+@utility bg-auth-dark {
+  @apply bg-[url("/images/auth-dark.png")];
 }
 
 @utility background-light850_dark100 {

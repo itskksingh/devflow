@@ -2,11 +2,10 @@
 import { SheetClose } from "@/components/ui/sheet";
 import { sidebarLinks } from "@/constants";
 import { cn } from "@/lib/utils";
-import { getHmrRefreshHash } from "next/dist/server/app-render/work-unit-async-storage.external";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useId } from "react";
+import React from "react";
 
 const NavLinks = ({ isMobileNav = false }: { isMobileNav?: boolean }) => {
   const pathname = usePathname();

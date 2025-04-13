@@ -8,6 +8,7 @@ import { Toaster } from "sonner";
 import { SessionProvider } from "next-auth/react";
 import { ReactNode } from "react";
 import { auth } from "@/auth";
+import LeftSidebar from "@/components/sidebar/LeftSidebar";
 
 const inter = Inter({
   subsets: ["latin"], // Or other subsets
@@ -29,6 +30,13 @@ const RootLayout = async ({ children }: { children: ReactNode }) => {
   const session = await auth();
   return (
     <html lang='en' suppressHydrationWarning>
+      <head>
+        <link
+          rel='stylesheet'
+          type='text/css'
+          href='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css'
+        />
+      </head>
       <SessionProvider session={session}>
         <body className={`${inter.variable} ${SpaceGrotesk.variable} antialiased`}>
           <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>

@@ -1,23 +1,19 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
-import { Geist_Mono, Inter, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/context/Theme";
-import Navbar from "@/components/navigation/navbar";
 import { Toaster } from "sonner";
 import { SessionProvider } from "next-auth/react";
 import { ReactNode } from "react";
 import { auth } from "@/auth";
-import LeftSidebar from "@/components/sidebar/LeftSidebar";
 
 const inter = Inter({
   subsets: ["latin"], // Or other subsets
   variable: "--font-inter", // CSS variable name
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // Font weights
 });
 
 const SpaceGrotesk = Space_Grotesk({
-  variable: "--font-geist-mono",
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
 });
 

@@ -7,15 +7,15 @@ import TagCard from "../cards/TagCard";
 const RightSidebar = () => {
   const hotQuestions = [
     {
-      _id: 1,
+      _id: "1",
       title: "What is the best way to learn React?",
     },
     {
-      _id: 2,
+      _id: "2",
       title: "How to use useState hook in React?",
     },
     {
-      _id: 3,
+      _id: "3",
       title: "What is the difference between props and state in React?",
     },
   ];
